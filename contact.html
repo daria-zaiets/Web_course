@@ -29,7 +29,83 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Yhteystiedot</h1>
+      <p>
+        Autamme mielellämme sopivan koneen valinnassa. Voit ottaa meihin
+        yhteyttä puhelimitse, sähköpostitse tai lähettämällä vuokrauskyselyn
+        alla olevalla lomakkeella.
+      </p>
+      <ul>
+        <li>Puhelin: 040 123 4567</li>
+        <li>Sähköposti: info@konekallio.fi</li>
+      </ul>
+
+      <h2>Vuokrauskysely</h2>
+      <form>
+        <div>
+          <label for="first-name">Etunimi: </label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Markku"
+            required
+          />
+        </div>
+        <div>
+          <label for="last-name">Sukunimi: </label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Kallio"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Sähköposti: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="kallio@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone-number">Puhelinnumero: </label>
+          <input
+            type="tel"
+            name="phone-number"
+            id="phone-number"
+            placeholder="0401234567"
+          />
+        </div>
+        <div>
+          <label for="rental-item">Vuokrattava kone: </label>
+          <select name="rental-item" id="rental-item" required>
+            <option value="" disabled selected hidden>--Valintse kone--</option>
+            <option value="mini-excavator">Minikaivurit</option>
+            <option value="mini-excavator">Tärylevyt</option>
+            <option value="mini-excavator">Betonimylly</option>
+          </select>
+        </div>
+        <div>
+          <label for="sart-date">Vuokrauksen alkamispäivä: </label>
+          <input type="date" name="sart-date" id="sart-date" required />
+        </div>
+        <div>
+          <label for="end-date">Vuokrauksen päättymispäivä: </label>
+          <input type="date" name="end-date" id="end-date" required />
+        </div>
+        <div>
+          <label for="additional-info">Lisätietoja: </label>
+          <textarea name="additional-info" id="additional-info"></textarea>
+        </div>
+        <input type="submit" value="Lähetä kysely" />
+      </form>
+    </main>
     <footer></footer>
   </body>
 </html>
