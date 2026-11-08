@@ -53,6 +53,7 @@
             required
           />
         </div>
+
         <div>
           <label for="last-name">Sukunimi: </label>
           <input
@@ -63,6 +64,7 @@
             required
           />
         </div>
+
         <div>
           <label for="email">Sähköposti: </label>
           <input
@@ -73,6 +75,7 @@
             required
           />
         </div>
+
         <div>
           <label for="phone-number">Puhelinnumero: </label>
           <input
@@ -82,27 +85,36 @@
             placeholder="0401234567"
           />
         </div>
+
         <div>
           <label for="rental-item">Vuokrattava kone: </label>
           <select name="rental-item" id="rental-item" required>
             <option value="" disabled selected hidden>--Valintse kone--</option>
-            <option value="mini-excavator">Minikaivurit</option>
-            <option value="mini-excavator">Tärylevyt</option>
-            <option value="mini-excavator">Betonimylly</option>
+            <option value="kubota-kx019-4">Minikaivuri - Kubota KX019-4</option>
+            <option value="bobcat-e20">Minikaivuri - Bobcat E20</option>
+            <option value="husqvarna-lf75">Tärylevy - Husqvarna LF75</option>
+            <option value="wacker-neuson-wp1550">
+              Tärylevy - Wacker Neuson WP1550
+            </option>
+            <option value="lumag-hez30">Halkomakone - Lumag HEZ30</option>
           </select>
         </div>
+
         <div>
           <label for="sart-date">Vuokrauksen alkamispäivä: </label>
           <input type="date" name="sart-date" id="sart-date" required />
         </div>
+
         <div>
           <label for="end-date">Vuokrauksen päättymispäivä: </label>
           <input type="date" name="end-date" id="end-date" required />
         </div>
+
         <div>
           <label for="additional-info">Lisätietoja: </label>
           <textarea name="additional-info" id="additional-info"></textarea>
         </div>
+
         <input type="submit" value="Lähetä kysely" />
       </form>
     </main>
