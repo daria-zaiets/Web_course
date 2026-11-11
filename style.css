@@ -1,0 +1,12 @@
+:root {
+  --bg: #fbf4ee;
+  --text-color: #3b1f2b;
+  --brand: #b23a48;
+  --space: 1rem;
+  --font-text: system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
